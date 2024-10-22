@@ -35,6 +35,7 @@ header h1 {
 .row {
     display: flex;
     flex-wrap: wrap;
+    margin: 0 -15px;
 }
 
 .column {
@@ -77,3 +78,16 @@ a {
     color: #2e87b5;
 }
 
+/*Tablet*/
+@media screen and (min-width: 768px) {
+    .column {
+        width: calc(100% / 2 - 30px);
+    }
+}
+
+/*Desktop*/
+@media screen and (min-width: 1024px) {
+    .column {
+        width: calc(100% / 3 - 30px);
+    }
+}
